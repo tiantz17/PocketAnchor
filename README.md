@@ -13,7 +13,6 @@ torch               1.7.1
 torch-geometric     1.6.3
 numpy               1.19.0
 pandas              1.2.4
-pymol               2.4.1
 rdkit               2020.03.3.0
 scikit-learn        0.21.3 
 scipy               1.6.3 
