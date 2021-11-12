@@ -2,8 +2,7 @@
 
 Learning Structure-based Subpocket Representations for Protein-Ligand Interaction Prediction
 
-
-![]{https://github.com/tiantz17/PocketAnchor/figure/pocketanchor.png}
+<div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
 ## Requirements
 
