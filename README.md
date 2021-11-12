@@ -30,7 +30,7 @@ tensorboard         2.4.1
 
     - PocketAnchor-data-AffinityInteractionDistance.zip (5.68GB) (TBA)
 
-    - PocketAnchor-data-PocketDetection.zip (2.82GB) (TBA)
+    - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
 
 4. Run the following inference scripts;
 5. The results can be find in ```[TASK]/results/[FOLDER]/```.
