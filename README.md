@@ -22,8 +22,18 @@ tensorboard         2.4.1
 ## Reproducing results
 
 1. Prepare the environment that satisfying the above requirements;
-2. Run the following inference scripts;
-3. The results can be find in ```[TASK]/results/[FOLDER]/```.
+2. Download the trained model files:
+
+    - [PocketAnchor-models.zip (105 MB)](https://drive.google.com/file/d/11xe9xqG4oSScXpJhYYOBH_KAnG4mlCKf/view?usp=sharing)
+
+3. Download the input data files:
+
+    - PocketAnchor-data-AffinityInteractionDistance.zip (5.68GB) (TBA)
+
+    - PocketAnchor-data-PocketDetection.zip (2.82GB) (TBA)
+
+4. Run the following inference scripts;
+5. The results can be find in ```[TASK]/results/[FOLDER]/```.
 
 
 ### 1. PocketAnchor-site
