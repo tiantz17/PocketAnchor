@@ -28,7 +28,7 @@ tensorboard         2.4.1
 
 3. Download the input data files:
 
-    - PocketAnchor-data-AffinityInteractionDistance.zip (5.68GB) (TBA)
+    - [PocketAnchor-data-AffinityInteractionDistance.zip (5.68GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
 
     - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
 
