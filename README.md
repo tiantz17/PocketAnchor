@@ -4,7 +4,7 @@ Learning Structure-based Subpocket Representations for Protein-Ligand Interactio
 
 <div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
-## Requirements
+# Requirements
 
 ```
 cuda                11.2
@@ -19,9 +19,9 @@ scipy               1.6.3
 tensorboard         2.4.1
 ```
 
-## Reproducing results
+# Reproducing results
 
-1. Prepare the environment that satisfying the above requirements;
+1. Prepare a environment that satisfying the above requirements;
 2. Download the trained model files:
 
     - [PocketAnchor-models.zip (105 MB)](https://drive.google.com/file/d/11xe9xqG4oSScXpJhYYOBH_KAnG4mlCKf/view?usp=sharing)
@@ -32,11 +32,11 @@ tensorboard         2.4.1
 
     - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
 
-4. Run the following inference scripts;
-5. The results can be find in ```[TASK]/results/[FOLDER]/```.
+4. Run the inference scripts below;
+5. The results can be found in ```[TASK]/results/[FOLDER]/```.
 
 
-### 1. PocketAnchor-site
+## 1. PocketAnchor-site
 Protein ligand binding site prediction
 
 ```
@@ -44,7 +44,7 @@ python runPrediction.py --task PocketDetection --dataset COACH420
 python runPrediction.py --task PocketDetection --dataset HOLO4k
 ```
 
-### 2. PocketAnchor-affinity
+## 2. PocketAnchor-affinity
 Protein-ligand binding affinity prediction
 
 ```
@@ -53,14 +53,14 @@ python runPrediction.py --task Affinity --setting newprotein
 python runPrediction.py --task Affinity --setting expanded
 ```
 
-### 3. PocketAnchor-interaction
+## 3. PocketAnchor-interaction
 Non-covalent interaction prediction
 
 ```
 python runPrediction.py --task Interaction
 ```
 
-### 4. PocketAnchor-distance
+## 4. PocketAnchor-distance
 Protein ligand binding pose classfication
 
 ```
