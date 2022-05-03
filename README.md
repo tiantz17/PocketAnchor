@@ -1,6 +1,6 @@
 # PocketAnchor
 
-Learning Structure-based Subpocket Representations for Protein-Ligand Interaction Prediction
+Learning Structure-based Pocket Representations for Protein-Ligand Interaction Prediction
 
 <div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
@@ -28,11 +28,11 @@ tensorboard         2.4.1
 
 3. Download the input data files:
 
-    - [PocketAnchor-data-AffinityInteractionDistance.zip (5.68GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
+    - [PocketAnchor-data-Affinity.zip (5.68GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
 
     - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
 
-4. Run the inference scripts below;
+4. Run the inference scripts below (run time about 10 mins);
 5. The results can be found in ```[TASK]/results/[FOLDER]/```.
 
 
@@ -53,16 +53,3 @@ python runPrediction.py --task Affinity --setting newprotein
 python runPrediction.py --task Affinity --setting expanded
 ```
 
-## 3. PocketAnchor-interaction
-Non-covalent interaction prediction
-
-```
-python runPrediction.py --task Interaction
-```
-
-## 4. PocketAnchor-distance
-Protein ligand binding pose classfication
-
-```
-python runPrediction.py --task Distance
-```
