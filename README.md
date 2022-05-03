@@ -32,7 +32,7 @@ tensorboard         2.4.1
 
     - [PocketAnchor-data-PocketDetection.zip (3.66GB)](https://drive.google.com/file/d/1tHkmsKXVrr4w08S2ZY7uwlhPj7qimuah/view?usp=sharing)
 
-4. Run the inference scripts below (run time about 10 mins);
+4. Run the inference scripts below (run time ranges from a few minutes to a couple of hours depending on the size of dataset);
 5. The results can be found in ```[TASK]/results/[FOLDER]/```.
 
 
