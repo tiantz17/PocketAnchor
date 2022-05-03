@@ -10,7 +10,7 @@ from PocketDetection.src.PDBbase import PDBbase
 
 DATASET_PARAMS = {
     "dist": 0.3,
-    "thre": "8",
+    "thre": "6",
 }
 
 
