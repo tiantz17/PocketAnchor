@@ -30,7 +30,7 @@ tensorboard         2.4.1
 
     - [PocketAnchor-data-Affinity.zip (5.69GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
 
-    - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
+    - [PocketAnchor-data-PocketDetection.zip (3.66GB)](https://drive.google.com/file/d/1tHkmsKXVrr4w08S2ZY7uwlhPj7qimuah/view?usp=sharing)
 
 4. Run the inference scripts below (run time about 10 mins);
 5. The results can be found in ```[TASK]/results/[FOLDER]/```.
