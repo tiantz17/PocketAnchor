@@ -24,11 +24,11 @@ tensorboard         2.4.1
 1. Prepare a environment that satisfying the above requirements;
 2. Download the trained model files:
 
-    - [PocketAnchor-models.zip (105 MB)](https://drive.google.com/file/d/11xe9xqG4oSScXpJhYYOBH_KAnG4mlCKf/view?usp=sharing)
+    - [PocketAnchor-models.zip (59.1MB)](https://drive.google.com/file/d/1FGhtZgH18F6JHz-IB_Wqm6pbHDdIfk3-/view?usp=sharing)
 
 3. Download the input data files:
 
-    - [PocketAnchor-data-Affinity.zip (5.68GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
+    - [PocketAnchor-data-Affinity.zip (5.69GB)](https://drive.google.com/file/d/1yLzUmqkJDtEH8b22VMkUjoK0c60TyHGR/view?usp=sharing)
 
     - [PocketAnchor-data-PocketDetection.zip (2.82GB)](https://drive.google.com/file/d/17IVo_vZaSRTGIw0fLSdc9q4lIxeqPa0p/view?usp=sharing)
 
@@ -52,4 +52,3 @@ python runPrediction.py --task Affinity --setting original
 python runPrediction.py --task Affinity --setting newprotein
 python runPrediction.py --task Affinity --setting expanded
 ```
-
