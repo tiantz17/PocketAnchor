@@ -6,7 +6,6 @@ import torch
 import torch.nn as nn
 
 from common.src.models.base import AtomConv, AnchorConv, UpwardConv, scatter_softmax
-from common.src.models.utils import weights_init
 
 
 MODEL_PARAMS = {
@@ -109,7 +108,6 @@ class Model(nn.Module):
             nn.Linear(self.hidden_anch, 1),
         )
 
-        self.apply(weights_init)
 
     def load_optimizer(self, train_params):
 

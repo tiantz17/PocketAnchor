@@ -28,10 +28,10 @@ def batch_data_process_PocketAnchor(data):
     promGraphBatch = Batch().from_data_list(promGraph)
  
     # distance matrices
-    pocket_label = torch.cat(pocket_label).view((-1,1))
-    pocket_label = torch.FloatTensor(pocket_label)
+#     pocket_label = torch.cat(pocket_label).view((-1,1))
+#     pocket_label = torch.FloatTensor(pocket_label)
     
-    return (atomGraphBatch, masfGraphBatch, anchGraphBatch, protGraphBatch, promGraphBatch), {"Pocket": pocket_label, "PDBID": pdbid}
+    return (atomGraphBatch, masfGraphBatch, anchGraphBatch, protGraphBatch, promGraphBatch), {"PDBID": pdbid}
     
 
 class DataSet(PDBbase, Eval):
@@ -42,7 +42,7 @@ class DataSet(PDBbase, Eval):
         self.path = path + "anchor_pocket_holo/"
         self.kwargs = kwargs
         # load data
-        self.table = pd.read_csv(self.path + "holo4k_table_pocket.tsv", sep='\t')
+        self.table = pd.read_csv(self.path + "holo4k_table_pocket_full.tsv", sep='\t')
         dict_label = pickle.load(open(self.path + "anchor_label_n4_dict_" + self.kwargs['thre'], "rb"))
 
         list_pdbid = list(self.table['pdbid'])
