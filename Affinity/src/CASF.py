@@ -6,7 +6,7 @@ from torch_geometric.data import Data
 from torch_geometric.data import Batch
 from torch.utils.data import Dataset
 
-from common.src.datasets.base import Eval
+from common.src.datasets.base import Eval, Split
 from common.src.datasets.utils import ATOM_FDIM, BOND_FDIM
 
 DATASET_PARAMS = {
@@ -39,7 +39,7 @@ def batch_data_process_PocketAnchor(data):
              "PDBID": pdbid}
     
 
-class DataSet(Dataset, Eval):
+class DataSet(Dataset, Eval, Split):
     """
     Dataset for PDBbind 2016/2020, CASF 2016 [already preprocessed]
     """
@@ -49,13 +49,21 @@ class DataSet(Dataset, Eval):
         # load data
         self.table = pd.read_csv(self.path + "casf2016_table_new_protein.tsv", sep='\t')
 
-        list_datatype = ["test", "expand"]
+        list_datatype = ["test", "expand", "train2016", "train2020"]
         
         if self.kwargs["datatype"] == "test":
             index = self.table["type"] == "test"
         elif self.kwargs["datatype"] == "expand":
             index = self.table["type"] == "test"
             index |= self.table["type"] == "np"
+        elif self.kwargs["datatype"] == "train2016":
+            index = self.table["casf2016"] == "refined"
+            index |= self.table["casf2016"] == "general"
+        elif self.kwargs["datatype"] == "train2020":
+            index = self.table["type"] == "refined"
+            index |= self.table["type"] == "kikd"
+            index |= self.table["type"] == "ic50"
+            index |= self.table["type"] == "v2020"
         elif self.kwargs["datatype"] not in list_datatype:
             raise NotImplementedError
 

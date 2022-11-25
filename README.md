@@ -4,7 +4,7 @@ Learning Structure-based Pocket Representations for Protein-Ligand Interaction P
 
 <div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
-# Requirements
+# 1. Requirements
 
 ```
 cuda                11.2
@@ -19,7 +19,7 @@ scipy               1.6.3
 tensorboard         2.4.1
 ```
 
-# Reproducing results
+# 2. Reproducing results
 
 1. Prepare a environment that satisfying the above requirements;
 2. Download the trained model files:
@@ -48,7 +48,30 @@ python runPrediction.py --task PocketDetection --dataset HOLO4k
 Protein-ligand binding affinity prediction
 
 ```
-python runPrediction.py --task Affinity --setting original
-python runPrediction.py --task Affinity --setting newprotein
-python runPrediction.py --task Affinity --setting expanded
+python runPrediction.py --task Affinity --dataset CASF --setting original --info original
+python runPrediction.py --task Affinity --dataset CASF --setting newprotein --info newprotein
+python runPrediction.py --task Affinity --dataset CASF --setting expanded --info expanded
+```
+
+# 3. Train PocketAnchor
+
+1. Prepare a environment that satisfying the above requirements;
+2. Generate anchor positions and the corresponding features of customized dataset following [PocketAnchorData](https://github.com/lishuya20/PocketAnchorData).
+3. Run the training scripts below;
+4. The trained models can be found in ```[TASK]/models/[FOLDER]```.
+
+
+## 1. PocketAnchor-site
+Protein ligand binding site prediction
+
+```
+python runTrain.py --task PocketDetection --dataset scPDB
+```
+
+## 2. PocketAnchor-affinity
+Protein-ligand binding affinity prediction
+
+```
+python runTrain.py --task Affinity --dataset CASF --setting original --info original
+python runTrain.py --task Affinity --dataset CASF --setting newprotein --info newprotein
 ```

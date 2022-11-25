@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import torch
 from torch_geometric.data import Batch
-from common.src.datasets.base import Eval
+from common.src.datasets.base import Eval, Split
 from PocketDetection.src.PDBbase import PDBbase
 
 DATASET_PARAMS = {
@@ -26,14 +26,14 @@ def batch_data_process_PocketAnchor(data):
     protGraphBatch = Batch().from_data_list(protGraph)
     promGraphBatch = Batch().from_data_list(promGraph)
     
-#     # distance matrices
-#     pocket_label = torch.cat(pocket_label).view((-1,1))
-#     pocket_label = torch.FloatTensor(pocket_label)
+    # # distance matrices
+    # pocket_label = torch.cat(pocket_label).view((-1,1))
+    # pocket_label = torch.FloatTensor(pocket_label)
  
     return (atomGraphBatch, masfGraphBatch, anchGraphBatch, protGraphBatch, promGraphBatch), {"PDBID": pdbid}
     
 
-class DataSet(PDBbase, Eval):
+class DataSet(PDBbase, Eval, Split):
     """
     Dataset for COACH420
     """

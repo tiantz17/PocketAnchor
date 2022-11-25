@@ -2,6 +2,7 @@ import time
 import numpy as np
 import torch
 import torch.nn as nn
+import torch.optim as optim
 import torch.nn.functional as F
 
 from torch_scatter import scatter_sum
@@ -32,9 +33,16 @@ TRAIN_PARAMS = {
     'num_repeat': 1,
     'num_fold': 5,
     'batch_size': 32,
+    'max_epoch': 100,
+    'early_stop': 20,
+    'learning_rate': 5e-4,
+    'weight_decay': 0,
+    'step_size': 20,
+    'gamma': 0.5,
     'list_task': ['Affinity', ],
     'task_eval': {'Affinity': "reg", },
     'task': 'Affinity',
+    'goal': 'r2',
 }
 
 
@@ -177,6 +185,9 @@ class Model(nn.Module):
                 
            
     def load_optimizer(self, train_params):
+        self.optimizer = optim.Adam(list(filter(lambda p: p.requires_grad, self.parameters())), 
+                                    lr=train_params["learning_rate"], 
+                                    weight_decay=train_params["weight_decay"])
         self.loss = {
             'Affinity': nn.MSELoss(), 
             }
@@ -185,9 +196,7 @@ class Model(nn.Module):
     def get_loss(self, dict_pred, dict_label):
         loss = 0.0
         for task in dict_pred:
-            if self.loss_weight[task] == 0.0:
-                continue
-            loss = loss + self.loss[task](dict_pred[task], dict_label[task]) * self.loss_weight[task]
+            loss = loss + self.loss[task](dict_pred[task], dict_label[task])
         return loss
 
     def GraphConv_module(self, vertGraphBatch):
