@@ -56,7 +56,7 @@ python runPrediction.py --task Affinity --dataset CASF --setting expanded --info
 # 3. Train PocketAnchor
 
 1. Prepare a environment that satisfying the above requirements;
-2. Generate anchor positions and the corresponding features of customized dataset following [PocketAnchorData](https://github.com/lishuya20/PocketAnchorData).
+2. Generate anchor positions and the corresponding features of customized dataset following [PocketAnchorData](https://github.com/lishuya17/PocketAnchorData).
 3. Run the training scripts below;
 4. The trained models can be found in ```[TASK]/models/[FOLDER]```.
 
