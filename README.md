@@ -1,4 +1,5 @@
 # PocketAnchor
+[![DOI](https://zenodo.org/badge/424266672.svg)](https://zenodo.org/badge/latestdoi/424266672)
 
 Learning Structure-based Pocket Representations for Protein-Ligand Interaction Prediction.
 
