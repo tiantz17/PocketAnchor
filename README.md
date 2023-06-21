@@ -5,9 +5,11 @@ Learning Structure-based Pocket Representations for Protein-Ligand Interaction P
 
 <div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
-The code for data processing can be found in [PocketAnchorData](https://github.com/lishuya17/PocketAnchorData).
+The code for data processing can be found in [https://github.com/lishuya17/PocketAnchorData](https://github.com/lishuya17/PocketAnchorData).
 
-The processed data can be found in [docker](https://hub.docker.com/r/tiantz17/pocketanchor-models) image.
+The processed data can be found in docker image: [https://hub.docker.com/r/tiantz17/pocketanchor-models](https://hub.docker.com/r/tiantz17/pocketanchor-models). (Not recommended)
+
+(Update) You can pull another docker image containing code, data, environment, trained models, and prediction results for reproduction: [https://hub.docker.com/r/tiantz17/pocketanchor](https://hub.docker.com/r/tiantz17/pocketanchor).
 
 # 1. Requirements
 
