@@ -3,7 +3,7 @@
 
 Learning Structure-based Pocket Representations for Protein-Ligand Interaction Prediction.
 
-<div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
+![image](https://github.com/tiantz17/PocketAnchor/assets/37930183/0e07af20-2f5b-4760-82ec-f40d065a46c9)
 
 Please refer to our [Cell Systems](https://doi.org/10.1016/j.cels.2023.05.005) paper for more detailed information.
 
