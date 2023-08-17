@@ -5,6 +5,25 @@ Learning Structure-based Pocket Representations for Protein-Ligand Interaction P
 
 <div><img width=200 src=https://github.com/tiantz17/PocketAnchor/blob/main/figure/pocketanchor.png></div>
 
+Please refer to our [Cell Systems](https://doi.org/10.1016/j.cels.2023.05.005) paper for more detailed information.
+
+Cite our paper by
+```
+@article{li2022pocketanchor,
+  title={PocketAnchor: Learning Structure-based Pocket Representations for Protein-Ligand Interaction Prediction},
+  author={Li, Shuya and Tian, Tingzhong and Zhang, Ziting and Zou, Ziheng and Zhao, Dan and Zeng, Jianyang},
+  journal={Cell Systems},
+  volume={14},
+  number={8},
+  pages={692-705.e6},
+  year={2023},
+  issn={2405-4712},
+  doi={https://doi.org/10.1016/j.cels.2023.05.005},
+  url={https://www.sciencedirect.com/science/article/pii/S2405471223001497},
+  year={2022}
+}
+```
+
 The code for data processing can be found in [https://github.com/lishuya17/PocketAnchorData](https://github.com/lishuya17/PocketAnchorData).
 
 The processed data can be found in docker image: [https://hub.docker.com/r/tiantz17/pocketanchor-models](https://hub.docker.com/r/tiantz17/pocketanchor-models). (Not recommended)
