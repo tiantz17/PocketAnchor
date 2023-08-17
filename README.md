@@ -20,7 +20,6 @@ Cite our paper by
   issn={2405-4712},
   doi={https://doi.org/10.1016/j.cels.2023.05.005},
   url={https://www.sciencedirect.com/science/article/pii/S2405471223001497},
-  year={2022}
 }
 ```
 
